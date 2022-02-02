@@ -3,7 +3,14 @@
     <v-form ref="form-filters" @input="setFormValid">
       <v-row justify="end" justify-md="start" align="center">
         <v-col cols="12" md="6" lg="3">
-          <v-select :value="filterBy" :items="itemsListFilterBy" label="Filtar por" item-color="transparent" @input="setFilterBy">
+          <v-select
+            id="select-filtrar-por"
+            :value="filterBy"
+            :items="itemsListFilterBy"
+            label="Filtar por"
+            item-color="transparent"
+            @input="setFilterBy"
+          >
             <template #prepend-item>
               <v-list-item>
                 <v-list-item-content>

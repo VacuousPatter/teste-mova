@@ -13,7 +13,7 @@
     <v-col v-show="pagesCount>1" cols="12">
       <v-row justify="center">
         <v-col cols="12" sm="8" md="6" lg="4">
-          <v-pagination v-model="page" :length="pagesCount" />
+          <v-pagination v-model="page" class="paginacao" :length="pagesCount" />
         </v-col>
       </v-row>
     </v-col>

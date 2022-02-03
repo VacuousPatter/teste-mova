@@ -1,9 +1,8 @@
-import { createLocalVue, shallowMount } from '@vue/test-utils'
+import { shallowMount, createLocalVue } from '@vue/test-utils'
 import ListCountries from '@/components/countries/ListCountries.vue'
+import CountryCard from '@/components/countries/CountryCard.vue'
 
 describe('/components/countries/ListaCountries.vue', () => {
-  const localVue = createLocalVue()
-
   const listaPaises = [{
     name: {
       common: 'Germany',
@@ -817,6 +816,7 @@ describe('/components/countries/ListaCountries.vue', () => {
   }]
 
   describe('caso 1', () => {
+    const localVue = createLocalVue()
     const wrapper = shallowMount(ListCountries, {
       localVue,
       propsData: {
@@ -824,12 +824,12 @@ describe('/components/countries/ListaCountries.vue', () => {
       }
     })
 
-    test('possui os 4 cards do paises', () => {
-      const allCountriesListed = wrapper.findAll('.countries').length
-      expect(allCountriesListed).toEqual(4)
+    test('possui 4 cards do paises na pagina atual', () => {
+      const countryCardsCount = wrapper.findAllComponents(CountryCard).length
+      expect(countryCardsCount).toEqual(4)
     })
 
-    test('items selecionados da pagina <=itemsPerPage', () => {
+    test('array com paises <= que limite de paises por pagina', () => {
       const itemsSelecionadosPagina = wrapper.vm.countriesPageList
       const itemsPorPagina = wrapper.vm.$props.itemsPerPage
       expect(itemsSelecionadosPagina.length).toBeLessThanOrEqual(itemsPorPagina)
@@ -843,19 +843,18 @@ describe('/components/countries/ListaCountries.vue', () => {
 
   describe('caso 2', () => {
     const wrapper = shallowMount(ListCountries, {
-      localVue,
       propsData: {
         countries: listaPaises,
         itemsPerPage: 1
       }
     })
 
-    test('possui 1 cards de país', () => {
-      const allCountriesListed = wrapper.findAll('.countries').length
-      expect(allCountriesListed).toEqual(1)
+    test('possui 1 card de país na página atual', () => {
+      const countryCardsCount = wrapper.findAllComponents(CountryCard).length
+      expect(countryCardsCount).toEqual(1)
     })
 
-    test('possui apenas 1 card no array da pagina atual', () => {
+    test('array com paises <= que limite de paises por pagina', () => {
       const itemsSelecionadosPagina = wrapper.vm.countriesPageList
       const itemsPorPagina = wrapper.vm.$props.itemsPerPage
       expect(itemsSelecionadosPagina.length).toBeLessThanOrEqual(itemsPorPagina)

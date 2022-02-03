@@ -4,7 +4,6 @@
       <v-row justify="end" justify-md="start" align="center">
         <v-col cols="12" md="6" lg="3">
           <v-select
-            id="select-filtrar-por"
             :value="filterBy"
             :items="itemsListFilterBy"
             label="Filtar por"

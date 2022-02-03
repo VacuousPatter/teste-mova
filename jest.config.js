@@ -1,5 +1,4 @@
 module.exports = {
-  testPathIgnorePatterns: ['/node_modules/', '/__tests__/jest.setup.js'],
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/$1',
     '^~/(.*)$': '<rootDir>/$1',
@@ -15,10 +14,10 @@ module.exports = {
     '.*\\.(vue)$': 'vue-jest'
   },
   collectCoverage: true,
-  // collectCoverageFrom: [
-  //   '<rootDir>/components/**/*.vue',
-  //   '<rootDir>/pages/**/*.vue'
-  // ],
+  collectCoverageFrom: [
+    '<rootDir>/components/**/*.vue',
+    '<rootDir>/pages/**/*.vue'
+  ],
   testEnvironment: 'jsdom',
-  setupFilesAfterEnv: ['./__tests__/jest.setup.js']
+  setupFilesAfterEnv: ['./jest.setup.js']
 }

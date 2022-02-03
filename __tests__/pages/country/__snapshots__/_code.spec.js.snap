@@ -1,0 +1,315 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`/pages/country/_code.vue Deve mostrar o país e mensagem sem paises vizinhos mostrar informações na tela 1`] = `
+"<div class=\\"container\\">
+  <div class=\\"row country-wrapper\\">
+    <div class=\\"col col-12\\">
+      <div class=\\"row\\">
+        <div class=\\"col-md-3 col-12\\">
+          <div class=\\"v-image v-responsive mx-auto theme--light\\" style=\\"max-width: 400px;\\">
+            <div class=\\"v-responsive__sizer\\" style=\\"padding-bottom: 56.25%;\\"></div>
+            <transition-stub name=\\"fade-transition\\" mode=\\"in-out\\">
+              <div class=\\"v-image__image v-image__image--preload v-image__image--cover\\" style=\\"background-position: center center;\\"></div>
+            </transition-stub>
+            <div class=\\"v-responsive__content\\"></div>
+          </div>
+        </div>
+        <div class=\\"col col-true\\">
+          <div role=\\"list\\" class=\\"v-list country__details v-sheet theme--light\\">
+            <div tabindex=\\"-1\\" role=\\"listitem\\" class=\\"details__detail details__detail--nome-local v-list-item theme--light\\">
+              <div class=\\"v-list-item__title\\">Nome Local: Brasil</div>
+            </div>
+            <div tabindex=\\"-1\\" role=\\"listitem\\" class=\\"details__detail details__detail--nome-internacional v-list-item theme--light\\">
+              <div class=\\"v-list-item__title\\">Nome Internacional: Brazil</div>
+            </div>
+            <div tabindex=\\"-1\\" role=\\"listitem\\" class=\\"details__detail details__detail--nome-capital v-list-item theme--light\\">
+              <div class=\\"v-list-item__title\\">Capital: Brasília</div>
+            </div>
+            <div tabindex=\\"-1\\" role=\\"listitem\\" class=\\"details__detail details__detail--nome-regiao v-list-item theme--light\\">
+              <div class=\\"v-list-item__title\\">
+                Região:
+                <a class=\\"details__detail--nome-regiao-link\\">
+                  Americas
+                </a></div>
+            </div>
+            <div tabindex=\\"-1\\" role=\\"listitem\\" class=\\"details__detail details__detail--nome-subregiao v-list-item theme--light\\">
+              <div class=\\"v-list-item__title\\">Sub-região: South America</div>
+            </div>
+            <div tabindex=\\"-1\\" role=\\"listitem\\" class=\\"details__detail details__detail--populacao v-list-item theme--light\\">
+              <div class=\\"v-list-item__title\\">População: 212 Milhões</div>
+            </div>
+            <div tabindex=\\"-1\\" role=\\"listitem\\" class=\\"details__detail details__detail--linguas v-list-item theme--light\\">
+              <div class=\\"v-list-item__title\\">Linguas: Portuguese</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class=\\"row\\">
+        <div class=\\"col col-12\\">
+          <div class=\\"v-card v-card--flat v-sheet theme--light rounded-0\\">
+            <div class=\\"v-card__title\\">Países Vizinhos:</div>
+            <div role=\\"alert\\" class=\\"v-alert mensagem-sem-pais-vizinho v-sheet theme--light v-alert--text\\">
+              <div class=\\"v-alert__wrapper\\">
+                <div class=\\"v-alert__content\\">
+                  Esse país não possui nenhum país vizinho.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>"
+`;
+
+exports[`/pages/country/_code.vue Deve mostrar o país mostrar informações na tela 1`] = `
+"<div class=\\"container\\">
+  <div class=\\"row country-wrapper\\">
+    <div class=\\"col col-12\\">
+      <div class=\\"row\\">
+        <div class=\\"col-md-3 col-12\\">
+          <div class=\\"v-image v-responsive mx-auto theme--light\\" style=\\"max-width: 400px;\\">
+            <div class=\\"v-responsive__sizer\\" style=\\"padding-bottom: 56.25%;\\"></div>
+            <transition-stub name=\\"fade-transition\\" mode=\\"in-out\\">
+              <div class=\\"v-image__image v-image__image--preload v-image__image--cover\\" style=\\"background-position: center center;\\"></div>
+            </transition-stub>
+            <div class=\\"v-responsive__content\\"></div>
+          </div>
+        </div>
+        <div class=\\"col col-true\\">
+          <div role=\\"list\\" class=\\"v-list country__details v-sheet theme--light\\">
+            <div tabindex=\\"-1\\" role=\\"listitem\\" class=\\"details__detail details__detail--nome-local v-list-item theme--light\\">
+              <div class=\\"v-list-item__title\\">Nome Local: Brasil</div>
+            </div>
+            <div tabindex=\\"-1\\" role=\\"listitem\\" class=\\"details__detail details__detail--nome-internacional v-list-item theme--light\\">
+              <div class=\\"v-list-item__title\\">Nome Internacional: Brazil</div>
+            </div>
+            <div tabindex=\\"-1\\" role=\\"listitem\\" class=\\"details__detail details__detail--nome-capital v-list-item theme--light\\">
+              <div class=\\"v-list-item__title\\">Capital: Brasília</div>
+            </div>
+            <div tabindex=\\"-1\\" role=\\"listitem\\" class=\\"details__detail details__detail--nome-regiao v-list-item theme--light\\">
+              <div class=\\"v-list-item__title\\">
+                Região:
+                <a class=\\"details__detail--nome-regiao-link\\">
+                  Americas
+                </a></div>
+            </div>
+            <div tabindex=\\"-1\\" role=\\"listitem\\" class=\\"details__detail details__detail--nome-subregiao v-list-item theme--light\\">
+              <div class=\\"v-list-item__title\\">Sub-região: South America</div>
+            </div>
+            <div tabindex=\\"-1\\" role=\\"listitem\\" class=\\"details__detail details__detail--populacao v-list-item theme--light\\">
+              <div class=\\"v-list-item__title\\">População: 212 Milhões</div>
+            </div>
+            <div tabindex=\\"-1\\" role=\\"listitem\\" class=\\"details__detail details__detail--linguas v-list-item theme--light\\">
+              <div class=\\"v-list-item__title\\">Linguas: Portuguese</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class=\\"row\\">
+        <div class=\\"col col-12\\">
+          <div class=\\"v-card v-card--flat v-sheet theme--light rounded-0\\">
+            <div class=\\"v-card__title\\">Países Vizinhos:</div>
+            <div class=\\"row countries__wrapper\\">
+              <div class=\\"countries col-md-6 col-lg-4 col-12\\"><a tabindex=\\"0\\" class=\\"countries__country v-card v-card--link v-sheet theme--light\\">
+                  <div class=\\"v-responsive\\">
+                    <div class=\\"v-responsive__sizer\\" style=\\"padding-bottom: 56.25%;\\"></div>
+                    <div class=\\"v-responsive__content\\">
+                      <div class=\\"v-image v-responsive theme--light\\">
+                        <div class=\\"v-responsive__sizer\\" style=\\"padding-bottom: 56.25%;\\"></div>
+                        <transition-stub name=\\"fade-transition\\" mode=\\"in-out\\">
+                          <div class=\\"v-image__image v-image__image--preload v-image__image--cover\\" style=\\"background-position: center center;\\"></div>
+                        </transition-stub>
+                        <div class=\\"v-responsive__content\\"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <transition-stub name=\\"expand-transition\\">
+                    <!---->
+                  </transition-stub>
+                </a></div>
+              <div class=\\"countries col-md-6 col-lg-4 col-12\\"><a tabindex=\\"0\\" class=\\"countries__country v-card v-card--link v-sheet theme--light\\">
+                  <div class=\\"v-responsive\\">
+                    <div class=\\"v-responsive__sizer\\" style=\\"padding-bottom: 56.25%;\\"></div>
+                    <div class=\\"v-responsive__content\\">
+                      <div class=\\"v-image v-responsive theme--light\\">
+                        <div class=\\"v-responsive__sizer\\" style=\\"padding-bottom: 56.25%;\\"></div>
+                        <transition-stub name=\\"fade-transition\\" mode=\\"in-out\\">
+                          <div class=\\"v-image__image v-image__image--preload v-image__image--cover\\" style=\\"background-position: center center;\\"></div>
+                        </transition-stub>
+                        <div class=\\"v-responsive__content\\"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <transition-stub name=\\"expand-transition\\">
+                    <!---->
+                  </transition-stub>
+                </a></div>
+              <div class=\\"countries col-md-6 col-lg-4 col-12\\"><a tabindex=\\"0\\" class=\\"countries__country v-card v-card--link v-sheet theme--light\\">
+                  <div class=\\"v-responsive\\">
+                    <div class=\\"v-responsive__sizer\\" style=\\"padding-bottom: 56.25%;\\"></div>
+                    <div class=\\"v-responsive__content\\">
+                      <div class=\\"v-image v-responsive theme--light\\">
+                        <div class=\\"v-responsive__sizer\\" style=\\"padding-bottom: 56.25%;\\"></div>
+                        <transition-stub name=\\"fade-transition\\" mode=\\"in-out\\">
+                          <div class=\\"v-image__image v-image__image--preload v-image__image--cover\\" style=\\"background-position: center center;\\"></div>
+                        </transition-stub>
+                        <div class=\\"v-responsive__content\\"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <transition-stub name=\\"expand-transition\\">
+                    <!---->
+                  </transition-stub>
+                </a></div>
+              <div class=\\"countries col-md-6 col-lg-4 col-12\\"><a tabindex=\\"0\\" class=\\"countries__country v-card v-card--link v-sheet theme--light\\">
+                  <div class=\\"v-responsive\\">
+                    <div class=\\"v-responsive__sizer\\" style=\\"padding-bottom: 56.25%;\\"></div>
+                    <div class=\\"v-responsive__content\\">
+                      <div class=\\"v-image v-responsive theme--light\\">
+                        <div class=\\"v-responsive__sizer\\" style=\\"padding-bottom: 56.25%;\\"></div>
+                        <transition-stub name=\\"fade-transition\\" mode=\\"in-out\\">
+                          <div class=\\"v-image__image v-image__image--preload v-image__image--cover\\" style=\\"background-position: center center;\\"></div>
+                        </transition-stub>
+                        <div class=\\"v-responsive__content\\"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <transition-stub name=\\"expand-transition\\">
+                    <!---->
+                  </transition-stub>
+                </a></div>
+              <div class=\\"countries col-md-6 col-lg-4 col-12\\"><a tabindex=\\"0\\" class=\\"countries__country v-card v-card--link v-sheet theme--light\\">
+                  <div class=\\"v-responsive\\">
+                    <div class=\\"v-responsive__sizer\\" style=\\"padding-bottom: 56.25%;\\"></div>
+                    <div class=\\"v-responsive__content\\">
+                      <div class=\\"v-image v-responsive theme--light\\">
+                        <div class=\\"v-responsive__sizer\\" style=\\"padding-bottom: 56.25%;\\"></div>
+                        <transition-stub name=\\"fade-transition\\" mode=\\"in-out\\">
+                          <div class=\\"v-image__image v-image__image--preload v-image__image--cover\\" style=\\"background-position: center center;\\"></div>
+                        </transition-stub>
+                        <div class=\\"v-responsive__content\\"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <transition-stub name=\\"expand-transition\\">
+                    <!---->
+                  </transition-stub>
+                </a></div>
+              <div class=\\"countries col-md-6 col-lg-4 col-12\\"><a tabindex=\\"0\\" class=\\"countries__country v-card v-card--link v-sheet theme--light\\">
+                  <div class=\\"v-responsive\\">
+                    <div class=\\"v-responsive__sizer\\" style=\\"padding-bottom: 56.25%;\\"></div>
+                    <div class=\\"v-responsive__content\\">
+                      <div class=\\"v-image v-responsive theme--light\\">
+                        <div class=\\"v-responsive__sizer\\" style=\\"padding-bottom: 56.25%;\\"></div>
+                        <transition-stub name=\\"fade-transition\\" mode=\\"in-out\\">
+                          <div class=\\"v-image__image v-image__image--preload v-image__image--cover\\" style=\\"background-position: center center;\\"></div>
+                        </transition-stub>
+                        <div class=\\"v-responsive__content\\"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <transition-stub name=\\"expand-transition\\">
+                    <!---->
+                  </transition-stub>
+                </a></div>
+              <div class=\\"countries col-md-6 col-lg-4 col-12\\"><a tabindex=\\"0\\" class=\\"countries__country v-card v-card--link v-sheet theme--light\\">
+                  <div class=\\"v-responsive\\">
+                    <div class=\\"v-responsive__sizer\\" style=\\"padding-bottom: 56.25%;\\"></div>
+                    <div class=\\"v-responsive__content\\">
+                      <div class=\\"v-image v-responsive theme--light\\">
+                        <div class=\\"v-responsive__sizer\\" style=\\"padding-bottom: 56.25%;\\"></div>
+                        <transition-stub name=\\"fade-transition\\" mode=\\"in-out\\">
+                          <div class=\\"v-image__image v-image__image--preload v-image__image--cover\\" style=\\"background-position: center center;\\"></div>
+                        </transition-stub>
+                        <div class=\\"v-responsive__content\\"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <transition-stub name=\\"expand-transition\\">
+                    <!---->
+                  </transition-stub>
+                </a></div>
+              <div class=\\"countries col-md-6 col-lg-4 col-12\\"><a tabindex=\\"0\\" class=\\"countries__country v-card v-card--link v-sheet theme--light\\">
+                  <div class=\\"v-responsive\\">
+                    <div class=\\"v-responsive__sizer\\" style=\\"padding-bottom: 56.25%;\\"></div>
+                    <div class=\\"v-responsive__content\\">
+                      <div class=\\"v-image v-responsive theme--light\\">
+                        <div class=\\"v-responsive__sizer\\" style=\\"padding-bottom: 56.25%;\\"></div>
+                        <transition-stub name=\\"fade-transition\\" mode=\\"in-out\\">
+                          <div class=\\"v-image__image v-image__image--preload v-image__image--cover\\" style=\\"background-position: center center;\\"></div>
+                        </transition-stub>
+                        <div class=\\"v-responsive__content\\"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <transition-stub name=\\"expand-transition\\">
+                    <!---->
+                  </transition-stub>
+                </a></div>
+              <div class=\\"countries col-md-6 col-lg-4 col-12\\"><a tabindex=\\"0\\" class=\\"countries__country v-card v-card--link v-sheet theme--light\\">
+                  <div class=\\"v-responsive\\">
+                    <div class=\\"v-responsive__sizer\\" style=\\"padding-bottom: 56.25%;\\"></div>
+                    <div class=\\"v-responsive__content\\">
+                      <div class=\\"v-image v-responsive theme--light\\">
+                        <div class=\\"v-responsive__sizer\\" style=\\"padding-bottom: 56.25%;\\"></div>
+                        <transition-stub name=\\"fade-transition\\" mode=\\"in-out\\">
+                          <div class=\\"v-image__image v-image__image--preload v-image__image--cover\\" style=\\"background-position: center center;\\"></div>
+                        </transition-stub>
+                        <div class=\\"v-responsive__content\\"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <transition-stub name=\\"expand-transition\\">
+                    <!---->
+                  </transition-stub>
+                </a></div>
+              <div class=\\"countries col-md-6 col-lg-4 col-12\\"><a tabindex=\\"0\\" class=\\"countries__country v-card v-card--link v-sheet theme--light\\">
+                  <div class=\\"v-responsive\\">
+                    <div class=\\"v-responsive__sizer\\" style=\\"padding-bottom: 56.25%;\\"></div>
+                    <div class=\\"v-responsive__content\\">
+                      <div class=\\"v-image v-responsive theme--light\\">
+                        <div class=\\"v-responsive__sizer\\" style=\\"padding-bottom: 56.25%;\\"></div>
+                        <transition-stub name=\\"fade-transition\\" mode=\\"in-out\\">
+                          <div class=\\"v-image__image v-image__image--preload v-image__image--cover\\" style=\\"background-position: center center;\\"></div>
+                        </transition-stub>
+                        <div class=\\"v-responsive__content\\"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <transition-stub name=\\"expand-transition\\">
+                    <!---->
+                  </transition-stub>
+                </a></div>
+              <div class=\\"col col-12\\" style=\\"display: none;\\">
+                <div class=\\"row justify-center\\">
+                  <div class=\\"col-sm-8 col-md-6 col-lg-4 col-12\\">
+                    <!---->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>"
+`;
+
+exports[`/pages/country/_code.vue Não mostrar país mostrar informações na tela 1`] = `
+"<div class=\\"container\\">
+  <div class=\\"row erro-pais-404\\">
+    <div class=\\"col col-12\\">
+      <div role=\\"alert\\" class=\\"v-alert v-sheet theme--light v-alert--text\\">
+        <div class=\\"v-alert__wrapper\\">
+          <div class=\\"v-alert__content\\">
+            País não encontrado no banco de dados!
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>"
+`;

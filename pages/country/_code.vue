@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <v-row v-if="country">
+    <v-row v-if="country" class="country-wrapper">
       <v-col cols="12">
         <v-row>
           <v-col cols="12" md="3">
@@ -8,18 +8,20 @@
           </v-col>
           <v-col cols="">
             <v-list class="country__details">
-              <v-list-item class="details__detail">
+              <v-list-item class="details__detail details__detail--nome-local">
                 <v-list-item-title>Nome Local: {{ localCountryName }}</v-list-item-title>
               </v-list-item>
-              <v-list-item class="details__detail">
+              <v-list-item class="details__detail details__detail--nome-internacional">
                 <v-list-item-title>Nome Internacional: {{ country.name.common }}</v-list-item-title>
               </v-list-item>
-              <v-list-item class="details__detail">
+              <v-list-item class="details__detail details__detail--nome-capital">
                 <v-list-item-title>Capital: {{ country.capital[0] }}</v-list-item-title>
               </v-list-item>
-              <v-list-item class="details__detail">
+              <v-list-item class="details__detail details__detail--nome-regiao">
                 <v-list-item-title>
-                  Região: <nuxt-link
+                  Região:
+                  <nuxt-link
+                    class="details__detail--nome-regiao-link"
                     :to="{
                       path:'/',
                       query:{
@@ -31,13 +33,13 @@
                   </nuxt-link>
                 </v-list-item-title>
               </v-list-item>
-              <v-list-item class="details__detail">
+              <v-list-item class="details__detail details__detail--nome-subregiao">
                 <v-list-item-title>Sub-região: {{ country.subregion }}</v-list-item-title>
               </v-list-item>
-              <v-list-item class="details__detail">
+              <v-list-item class="details__detail details__detail--populacao">
                 <v-list-item-title>População: {{ formatPopulationNumber(country.population) }}</v-list-item-title>
               </v-list-item>
-              <v-list-item class="details__detail">
+              <v-list-item class="details__detail details__detail--linguas">
                 <v-list-item-title>Linguas: {{ countryLanguages }}</v-list-item-title>
               </v-list-item>
             </v-list>
@@ -49,12 +51,19 @@
               <v-card-title>Países Vizinhos:</v-card-title>
 
               <ListCountries v-if="borderCountries.length>0" :countries="borderCountries" :items-per-page="12" />
-              <v-alert v-else text>
+              <v-alert v-else text class="mensagem-sem-pais-vizinho">
                 Esse país não possui nenhum país vizinho.
               </v-alert>
             </v-card>
           </v-col>
         </v-row>
+      </v-col>
+    </v-row>
+    <v-row v-else class="erro-pais-404">
+      <v-col cols="12">
+        <v-alert text>
+          País não encontrado no banco de dados!
+        </v-alert>
       </v-col>
     </v-row>
   </v-container>
@@ -105,7 +114,9 @@ export default {
       this.$axios.$get(`https://restcountries.com/v3.1/alpha/${this.$route.params.code}`)
         .then((countries) => {
           this.country = countries[0]
-          this.getCountryBorderCountries()
+          if (this.country) {
+            this.getCountryBorderCountries()
+          }
         })
     },
     getCountryBorderCountries () {

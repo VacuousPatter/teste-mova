@@ -1,4 +1,5 @@
 import { mount, createLocalVue, RouterLinkStub } from '@vue/test-utils'
+import Vuetify from 'vuetify'
 import _code from '@/pages/country/_code'
 import ListCountries from '@/components/countries/ListCountries'
 const data = require('./data.json')
@@ -28,6 +29,7 @@ describe('/pages/country/_code.vue', () => {
 
       wrapper = mount(_code, {
         localVue,
+        vuetify: new Vuetify(),
         mocks: {
           $axios: axiosMock,
           $route: {

@@ -1,4 +1,4 @@
-import { mount, createLocalVue } from '@vue/test-utils'
+import { mount, createLocalVue, RouterLinkStub } from '@vue/test-utils'
 import Vuetify from 'vuetify'
 import ListCountries from '@/components/countries/ListCountries.vue'
 import CountryCard from '@/components/countries/CountryCard.vue'
@@ -15,6 +15,9 @@ describe('/components/countries/ListaCountries.vue', () => {
       vuetify,
       propsData: {
         countries: listaPaises
+      },
+      stubs: {
+        NuxtLink: RouterLinkStub
       }
     })
 
@@ -52,6 +55,9 @@ describe('/components/countries/ListaCountries.vue', () => {
       propsData: {
         countries: listaPaises,
         itemsPerPage: 1
+      },
+      stubs: {
+        NuxtLink: RouterLinkStub
       }
     })
 

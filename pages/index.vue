@@ -165,20 +165,32 @@ export default {
   computed: {
     ...mapState('homeSearch', ['search', 'filterBy', 'formValid']),
     labelSearch () {
-      if (this.filterBy === 'region') { return 'Região' }
-      if (this.filterBy === 'capital') { return 'Capital' }
-      if (this.filterBy === 'lang') { return 'Língua' }
-      if (this.filterBy === 'country') { return 'País' }
-      if (this.filterBy === 'calling-code') { return 'Código de ligação' }
-      return ''
+      if (this.filterBy === 'region') {
+        return 'Região'
+      } else if (this.filterBy === 'capital') {
+        return 'Capital'
+      } else if (this.filterBy === 'lang') {
+        return 'Língua'
+      } else if (this.filterBy === 'country') {
+        return 'País'
+      } else {
+        // this.filterBy === 'calling-code'
+        return 'Código de ligação'
+      }
     },
     placeholderSearch () {
-      if (this.filterBy === 'region') { return 'Escolha uma região' }
-      if (this.filterBy === 'capital') { return 'Digite uma capital' }
-      if (this.filterBy === 'lang') { return 'Digite uma Língua' }
-      if (this.filterBy === 'country') { return 'Digite um país' }
-      if (this.filterBy === 'calling-code') { return 'Digite um código de ligação' }
-      return ''
+      if (this.filterBy === 'region') {
+        return 'Escolha uma região'
+      } else if (this.filterBy === 'capital') {
+        return 'Digite uma capital'
+      } else if (this.filterBy === 'lang') {
+        return 'Digite uma Língua'
+      } else if (this.filterBy === 'country') {
+        return 'Digite um país'
+      } else {
+        // this.filterBy === 'calling-code'
+        return 'Digite um código de ligação'
+      }
     },
     itemsAutoCompleteSearch () {
       if (this.filterBy === 'capital') { return this.allCapitals }
@@ -281,12 +293,15 @@ export default {
       if (!this.formValid) { return }
       this.loadingCountries = true
       this.countriesError = null
+
       this.$axios.$get(this.searchCountriesUrl)
         .then((countries) => {
           if (countries.status === 404) {
             this.countriesError = 'Nenhum país encontrado com esse filtro!'
+            this.countries = []
+          } else {
+            this.countries = countries
           }
-          this.countries = countries
         })
         .catch(() => {
           this.countriesError = 'Ocorreu um erro ao obter os países!'

@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`/components/countries/CountryCard.vue caso 1 snapshot 1`] = `
+"<a tabindex=\\"0\\" class=\\"countries__country v-card v-card--link v-sheet theme--light\\">
+  <div class=\\"v-responsive\\">
+    <div class=\\"v-responsive__sizer\\" style=\\"padding-bottom: 56.25%;\\"></div>
+    <div class=\\"v-responsive__content\\">
+      <div class=\\"v-image v-responsive theme--light\\">
+        <div class=\\"v-responsive__sizer\\" style=\\"padding-bottom: 56.25%;\\"></div>
+        <transition-stub name=\\"fade-transition\\" mode=\\"in-out\\">
+          <div class=\\"v-image__image v-image__image--preload v-image__image--cover\\" style=\\"background-position: center center;\\"></div>
+        </transition-stub>
+        <div class=\\"v-responsive__content\\"></div>
+      </div>
+    </div>
+  </div>
+  <transition-stub name=\\"expand-transition\\">
+    <div class=\\"country__hover-panel\\">
+      <p class=\\"pais--nome\\">
+        Aruba | ABW
+      </p>
+    </div>
+  </transition-stub>
+</a>"
+`;
+
+exports[`/components/countries/CountryCard.vue caso 2 snapshot 1`] = `
+"<a tabindex=\\"0\\" class=\\"countries__country v-card v-card--link v-sheet theme--light\\">
+  <div class=\\"v-responsive\\">
+    <div class=\\"v-responsive__sizer\\" style=\\"padding-bottom: 56.25%;\\"></div>
+    <div class=\\"v-responsive__content\\">
+      <div class=\\"v-image v-responsive theme--light\\">
+        <div class=\\"v-responsive__sizer\\" style=\\"padding-bottom: 56.25%;\\"></div>
+        <transition-stub name=\\"fade-transition\\" mode=\\"in-out\\">
+          <div class=\\"v-image__image v-image__image--preload v-image__image--cover\\" style=\\"background-position: center center;\\"></div>
+        </transition-stub>
+        <div class=\\"v-responsive__content\\"></div>
+      </div>
+    </div>
+  </div>
+  <transition-stub name=\\"expand-transition\\">
+    <!---->
+  </transition-stub>
+</a>"
+`;
